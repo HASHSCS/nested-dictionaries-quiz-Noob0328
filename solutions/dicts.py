@@ -32,12 +32,12 @@ def add_information(data, outer_key, middle_key, inner_key, value):
     """
     # Your code here
     
-    # if outer_key not in data:
-    
+    if outer_key not in data:
+        data[outer_key] = {}
     if middle_key not in data[outer_key]:
         data[outer_key][middle_key] = {}
-        data[outer_key][middle_key] = value
-        return data 
+    data[outer_key][middle_key][inner_key]= value
+    return data 
 
 
 
